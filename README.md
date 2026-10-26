@@ -1,4 +1,4 @@
-# NERV OS for Nothing Phone (3)
+# NERV Launcher for Nothing Phone (3)
 
 An Evangelion-styled custom launcher and system theme for the **Nothing Phone (3)** running **Nothing OS 5 (Android 17)**.
 No root, no bootloader unlock, and everything can be undone.
