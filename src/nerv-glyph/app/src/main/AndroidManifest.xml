@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="com.nothing.ketchum.permission.ENABLE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- lets the charger watcher open the A.T. Field screen from the background (user grants it in Settings) -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:icon="@drawable/toy_magi"
+        android:label="NERV Glyph"
+        android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ChargeFxActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:showWhenLocked="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+            android:turnScreenOn="true" />
+
+        <service
+            android:name=".ChargeWatchService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Shows an animation on the phone's rear Glyph Matrix display when a charger is connected" />
+        </service>
+
+        <receiver android:name=".BootReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- NERV Home says which unit is active (sender checked in code) -->
+        <receiver android:name=".UnitReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="dev.nervos.glyph.SET_UNIT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Glyph Toys: cycled with a short press on the Glyph Button, long press sends "change". -->
+        <service android:name=".AtFieldToy" android:exported="true">
+            <intent-filter><action android:name="com.nothing.glyph.TOY" /></intent-filter>
+            <meta-data android:name="com.nothing.glyph.toy.name" android:resource="@string/toy_atfield" />
+            <meta-data android:name="com.nothing.glyph.toy.image" android:resource="@drawable/toy_atfield" />
+            <meta-data android:name="com.nothing.glyph.toy.summary" android:resource="@string/toy_atfield_summary" />
+            <meta-data android:name="com.nothing.glyph.toy.longpress" android:value="1" />
+        </service>
+
+        <service android:name=".MagiToy" android:exported="true">
+            <intent-filter><action android:name="com.nothing.glyph.TOY" /></intent-filter>
+            <meta-data android:name="com.nothing.glyph.toy.name" android:resource="@string/toy_magi" />
+            <meta-data android:name="com.nothing.glyph.toy.image" android:resource="@drawable/toy_magi" />
+            <meta-data android:name="com.nothing.glyph.toy.summary" android:resource="@string/toy_magi_summary" />
+            <meta-data android:name="com.nothing.glyph.toy.longpress" android:value="1" />
+        </service>
+
+        <service android:name=".SyncToy" android:exported="true">
+            <intent-filter><action android:name="com.nothing.glyph.TOY" /></intent-filter>
+            <meta-data android:name="com.nothing.glyph.toy.name" android:resource="@string/toy_sync" />
+            <meta-data android:name="com.nothing.glyph.toy.image" android:resource="@drawable/toy_sync" />
+            <meta-data android:name="com.nothing.glyph.toy.summary" android:resource="@string/toy_sync_summary" />
+            <meta-data android:name="com.nothing.glyph.toy.longpress" android:value="1" />
+            <meta-data android:name="com.nothing.glyph.toy.aod_support" android:value="1" />
+        </service>
+        <service android:name=".LimitToy" android:exported="true">
+            <intent-filter><action android:name="com.nothing.glyph.TOY" /></intent-filter>
+            <meta-data android:name="com.nothing.glyph.toy.name" android:resource="@string/toy_limit" />
+            <meta-data android:name="com.nothing.glyph.toy.image" android:resource="@drawable/toy_limit" />
+            <meta-data android:name="com.nothing.glyph.toy.summary" android:resource="@string/toy_limit_summary" />
+            <meta-data android:name="com.nothing.glyph.toy.longpress" android:value="1" />
+        </service>
+
+        <service android:name=".PatternToy" android:exported="true">
+            <intent-filter><action android:name="com.nothing.glyph.TOY" /></intent-filter>
+            <meta-data android:name="com.nothing.glyph.toy.name" android:resource="@string/toy_pattern" />
+            <meta-data android:name="com.nothing.glyph.toy.image" android:resource="@drawable/toy_pattern" />
+            <meta-data android:name="com.nothing.glyph.toy.summary" android:resource="@string/toy_pattern_summary" />
+            <meta-data android:name="com.nothing.glyph.toy.longpress" android:value="1" />
+        </service>
+    </application>
+</manifest>

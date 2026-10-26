@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toy_atfield">A.T. Field</string>
+    <string name="toy_atfield_summary">Octagonal field rings pulse outward. Long press holds the field.</string>
+    <string name="toy_magi">MAGI</string>
+    <string name="toy_magi_summary">Melchior, Balthasar and Casper deliberate. Long press for the decision.</string>
+    <string name="toy_sync">Sync Ratio</string>
+    <string name="toy_sync_summary">Battery level with a ring gauge; long press shows the time. Flashes an emergency frame in battery saver. Works on always-on.</string>
+    <string name="toy_limit">Activity Limit</string>
+    <string name="toy_limit_summary">Five minutes of internal power counting down. Long press starts or pauses it, and refills it once it runs out.</string>
+    <string name="toy_pattern">Pattern Blue</string>
+    <string name="toy_pattern_summary">The Angel alert: a flashing frame with the pattern scrolling through. Long press switches between Pattern Blue and Pattern Orange.</string>
+</resources>

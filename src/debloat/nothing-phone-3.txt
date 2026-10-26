@@ -1,0 +1,32 @@
+# Optional apps removed from the Nothing Phone (3) (A024, Nothing OS 4.1), approved 2026-10-22.
+# Removed for user 0 only: system copies stay on the phone, so each one can be restored.
+# Remove:  bash debloat.sh nothing-phone-3.txt
+# Restore: bash restore.sh nothing-phone-3.txt   (Fitbit, Google Home, Google One: reinstall from Play Store)
+# ntgamedashboard and ntessentialrecorder refuse uninstall (DELETE_FAILED_INTERNAL_ERROR), so they are
+# disabled instead; restore.sh re-enables them.
+
+# Google extras
+com.google.android.apps.youtube.music
+com.google.android.videos
+com.google.android.apps.tachyon
+com.google.android.apps.docs
+com.google.android.apps.bard
+com.google.android.keep
+com.google.android.apps.safetyhub
+com.google.android.feedback
+
+# Preinstalled Play apps
+com.fitbit.FitbitMobile
+com.google.android.apps.chromecast.app
+com.google.android.apps.subscriptions.red
+
+# Nothing extras
+com.nothing.userguide
+com.nothing.introduction16
+com.nothing.ntgamedashboard
+com.nothing.aiwidget
+
+# Essential Space (Essential Key does nothing without these)
+com.nothing.ntessentialspace
+com.nothing.ntessentialrecorder
+com.nothing.essentialintelligence
