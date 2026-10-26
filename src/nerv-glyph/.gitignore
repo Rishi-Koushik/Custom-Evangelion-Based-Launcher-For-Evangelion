@@ -1,0 +1,6 @@
+build/
+app/build/
+.gradle/
+local.properties
+# Nothing's SDK licence forbids redistribution: keep the .aar out of any shared repo.
+app/libs/*.aar

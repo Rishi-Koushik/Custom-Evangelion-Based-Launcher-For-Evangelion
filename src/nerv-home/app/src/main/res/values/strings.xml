@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wp_unit01">NERV Misato Katsuragi: the whole phone follows this unit</string>
+    <string name="wp_label_unit01">NERV · Misato Katsuragi</string>
+    <string name="wp_unit00">NERV Unit-00 Rei: the whole phone follows this unit</string>
+    <string name="wp_label_unit00">NERV · Unit-00 Rei</string>
+    <string name="wp_unit02">NERV Unit-02 Asuka: the whole phone follows this unit</string>
+    <string name="wp_label_unit02">NERV · Unit-02 Asuka</string>
+    <string name="wp_unit08">NERV Mari Unit-08: the whole phone follows this unit</string>
+    <string name="wp_label_unit08">NERV · Mari Unit-08</string>
+    <string name="wp_author">NERV Home</string>
+</resources>

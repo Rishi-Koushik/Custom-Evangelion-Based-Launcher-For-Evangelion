@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <version>1</version>
+    <category title="NERV" />
+    <item drawable="nerv_phone" />
+    <item drawable="nerv_messages" />
+    <item drawable="nerv_contacts" />
+    <item drawable="nerv_browser" />
+    <item drawable="nerv_camera" />
+    <item drawable="nerv_gallery" />
+    <item drawable="nerv_music" />
+    <item drawable="nerv_maps" />
+    <item drawable="nerv_clock" />
+    <item drawable="nerv_mail" />
+    <item drawable="nerv_calendar" />
+    <item drawable="nerv_notes" />
+    <item drawable="nerv_files" />
+    <item drawable="nerv_calculator" />
+    <item drawable="nerv_settings" />
+    <item drawable="nerv_store" />
+    <item drawable="nerv_video" />
+    <item drawable="nerv_weather" />
+    <item drawable="nerv_recorder" />
+    <item drawable="nerv_compass" />
+    <item drawable="nerv_chat" />
+    <item drawable="nerv_social" />
+    <item drawable="nerv_send" />
+    <item drawable="nerv_spotify" />
+    <item drawable="nerv_shop" />
+    <item drawable="nerv_pay" />
+    <item drawable="nerv_health" />
+    <item drawable="nerv_magi" />
+    <item drawable="nerv_terminal" />
+    <item drawable="nerv_assistant" />
+    <item drawable="nerv_home" />
+    <item drawable="nerv_videocall" />
+    <item drawable="nerv_safety" />
+    <item drawable="nerv_cloud" />
+</resources>

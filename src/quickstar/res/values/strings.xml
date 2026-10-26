@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a11y_desc">Draws the Quickstar control centre and its top-edge swipe area. It does not read your screen.</string>
+    <string name="lockhold_desc">Opens the NERV theme picker when you hold the lock screen. It listens only for Nothing\'s Customise lock screen button and reads no other screen content. When NERV notifications are on, it also draws their banners at the top of the screen.</string>
+</resources>
