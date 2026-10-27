@@ -10,7 +10,7 @@ Glyph Matrix and battery saver.
 
 | Unit | Colours |
 |---|---|
-| Misato Katsuragi (Unit-01) | purple + neon green |
+| Misato Katsuragi (Unit-01) | purple + neon green |(i prefer Misato over Shinji)
 | Unit-00 (Rei) | light blue + white |
 | Unit-02 (Asuka) | red + orange |
 | Mari | pink + peach |
