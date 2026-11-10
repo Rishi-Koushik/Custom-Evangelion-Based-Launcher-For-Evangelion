@@ -215,6 +215,14 @@ Source is in [`src/`](src):
 The release builds are signed with the Android **debug** key so they install over ADB. If you build your own they will be signed
 with a different key, so uninstall the prebuilt ones first.
 
+## 👥 Contributors
+
+- **Rishi Koushik** ([@Rishi-Koushik](https://github.com/Rishi-Koushik)) - Creator & Lead Developer
+- **Antigravity** ([Google DeepMind](https://deepmind.google/)) - AI Contributor
+- **Claude** ([Anthropic](https://anthropic.com/)) - AI Contributor
+
+See [CONTRIBUTORS.md](CONTRIBUTORS.md) for full contributor details.
+
 ## Notes
 
 - Built for and tested on a Nothing Phone (3) (A024), Nothing OS 5.0 (Android 17). Other devices are untested.
